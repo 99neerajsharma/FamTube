@@ -6,6 +6,7 @@ require (
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/gin-gonic/gin v1.8.1
 	github.com/urfave/cli/v2 v2.11.1
+	go.uber.org/config v1.4.0
 	go.uber.org/fx v1.17.1
 	gorm.io/driver/postgres v1.3.8
 	gorm.io/gorm v1.23.8
@@ -45,9 +46,11 @@ require (
 	go.uber.org/multierr v1.8.0 // indirect
 	go.uber.org/zap v1.21.0 // indirect
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa // indirect
+	golang.org/x/lint v0.0.0-20190930215403-16217165b5de // indirect
 	golang.org/x/net v0.0.0-20220722155237-a158d28d115b // indirect
 	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
 	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/tools v0.1.11 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )

@@ -1,0 +1,28 @@
+version: '3'
+services:
+  database:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5433:5432'
+    volumes:
+      - /tmp/db:/var/lib/postgresql/database
+
+  server:
+    build:
+      context: .
+      dockerfile: server-dockerfile/Dockerfile
+    ports:
+      - '3000:3000'
+    depends_on:
+      - database
+
+  worker:
+    build:
+      context: .
+      dockerfile: worker-dockerfile/Dockerfile
+    depends_on:
+      - database

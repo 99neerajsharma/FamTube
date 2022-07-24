@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/fvbock/endless"
 	"github.com/gin-gonic/gin"
+	"go.uber.org/config"
 	"go.uber.org/fx"
 	"log"
 )
@@ -14,12 +15,12 @@ func NewHttpRouter() *gin.Engine {
 	return router
 }
 
-func RegisterServerHooks(lifecycle fx.Lifecycle, router *gin.Engine) {
+func RegisterServerHooks(lifecycle fx.Lifecycle, router *gin.Engine, configYAML *config.YAML) {
 	lifecycle.Append(
 		fx.Hook{
 			OnStart: func(context.Context) error {
 				log.Println("starting server")
-				go endless.ListenAndServe(fmt.Sprintf(":%v", 3000), router)
+				go endless.ListenAndServe(fmt.Sprintf(":%v", configYAML.Get("server.port")), router)
 				return nil
 			},
 			OnStop: func(context.Context) error {

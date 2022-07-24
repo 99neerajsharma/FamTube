@@ -1,0 +1,26 @@
+
+version: 1.0
+
+server:
+  port: 3000
+
+worker:
+  query: 'cooking'
+  yt_keys:
+    - key_1
+    - key_2
+    - key_3
+    - key_4
+    - key_5
+
+db:
+  pg:
+    host: database
+    user: postgres
+    password: postgres
+    name: postgres
+    port: 5432
+
+
+
+
