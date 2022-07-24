@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "69765145-292f-4b64-ba2e-c2fb3fafa5ab",
+		"name": "FamTube",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16883765"
+	},
+	"item": [
+		{
+			"name": "GET all latest videos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/videos?page=1&pageSize=20",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"videos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all latest videos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/videos?page=1&pageSize=20",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"videos"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jul 2022 11:11:42 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"videos\": [\n        {\n            \"id\": \"GaCkZixu96o\",\n            \"created_at\": \"2022-07-24T10:41:32.010482Z\",\n            \"updated_at\": \"2022-07-24T10:41:32.010482Z\",\n            \"title\": \"Cooking skills #viral #short #india #cooking #homecooking #cookingathome  #cookingtime #cookingclass\",\n            \"description\": \"Cooking skills #viral #short #india #cooking #homecooking #cookingathome #cookingtime #cookingclass #cooking ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/GaCkZixu96o/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/GaCkZixu96o/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/GaCkZixu96o/hqdefault.jpg\",\n            \"channel_name\": \"arnob\",\n            \"published_at\": \"2022-07-24T10:39:46Z\"\n        },\n        {\n            \"id\": \"MZC_qkMXrNg\",\n            \"created_at\": \"2022-07-24T10:41:32.010482Z\",\n            \"updated_at\": \"2022-07-24T10:41:32.010482Z\",\n            \"title\": \"Aki&#39;s Simple Cooking 24.7.(3)\",\n            \"description\": \"cooking.\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/MZC_qkMXrNg/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/MZC_qkMXrNg/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/MZC_qkMXrNg/hqdefault.jpg\",\n            \"channel_name\": \"Aki's Simple Cooking\",\n            \"published_at\": \"2022-07-24T10:34:03Z\"\n        },\n        {\n            \"id\": \"lTiU9mgfRg8\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Aki&#39;s Simple Cooking 24.7.(2)\",\n            \"description\": \"cooking.\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/lTiU9mgfRg8/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/lTiU9mgfRg8/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/lTiU9mgfRg8/hqdefault.jpg\",\n            \"channel_name\": \"Aki's Simple Cooking\",\n            \"published_at\": \"2022-07-24T10:33:16Z\"\n        },\n        {\n            \"id\": \"32f8nvM0rGM\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Aki&#39;s Simple Cooking 24.7.(1)\",\n            \"description\": \"cooking.\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/32f8nvM0rGM/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/32f8nvM0rGM/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/32f8nvM0rGM/hqdefault.jpg\",\n            \"channel_name\": \"Aki's Simple Cooking\",\n            \"published_at\": \"2022-07-24T10:32:17Z\"\n        },\n        {\n            \"id\": \"F_t84ZaOJPU\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Kheer recipe||Tana Cooking\",\n            \"description\": \"\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/F_t84ZaOJPU/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/F_t84ZaOJPU/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/F_t84ZaOJPU/hqdefault.jpg\",\n            \"channel_name\": \"Tana Cooking\",\n            \"published_at\": \"2022-07-24T10:30:45Z\"\n        },\n        {\n            \"id\": \"QG49bB7TA_A\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Date dryfruit rolls😍#shorts #shortvideo #youtube #youtubeshorts #cooking #sweet #date #recipe#food\",\n            \"description\": \"\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/QG49bB7TA_A/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/QG49bB7TA_A/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/QG49bB7TA_A/hqdefault.jpg\",\n            \"channel_name\": \"creative me\",\n            \"published_at\": \"2022-07-24T10:26:48Z\"\n        },\n        {\n            \"id\": \"u-ppF7fmWks\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Sita Cooking | Angkor Wat Bar | how to make cocktail drinks at home SR Temple Club\",\n            \"description\": \"Welcome to Sita Cooking! This channel will show the place for tourism in the Siem Reap Pup Street. That place is the famus place ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/u-ppF7fmWks/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/u-ppF7fmWks/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/u-ppF7fmWks/hqdefault.jpg\",\n            \"channel_name\": \"Happy cooking\",\n            \"published_at\": \"2022-07-24T10:25:11Z\"\n        },\n        {\n            \"id\": \"FzEMgYcVy44\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Sita Cooking | Angkor Wat Bar | how to make cocktail drinks at home SR Temple Club\",\n            \"description\": \"Welcome to Sita Cooking! This channel will show the place for tourism in the Siem Reap Pup Street. That place is the famus place ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/FzEMgYcVy44/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/FzEMgYcVy44/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/FzEMgYcVy44/hqdefault.jpg\",\n            \"channel_name\": \"Happy cooking\",\n            \"published_at\": \"2022-07-24T10:24:19Z\"\n        },\n        {\n            \"id\": \"1GukabQyYYQ\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Sita Cooking | Angkor Wat Bar | how to make cocktail drinks at home SR Temple Club\",\n            \"description\": \"Welcome to Sita Cooking! This channel will show the place for tourism in the Siem Reap Pup Street. That place is the famus place ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/1GukabQyYYQ/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/1GukabQyYYQ/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/1GukabQyYYQ/hqdefault.jpg\",\n            \"channel_name\": \"Happy cooking\",\n            \"published_at\": \"2022-07-24T10:24:11Z\"\n        },\n        {\n            \"id\": \"CWHap-Eye8I\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Sita Cooking | Angkor Wat Bar | how to make cocktail drinks at home SR Temple Club\",\n            \"description\": \"Welcome to Sita Cooking! This channel will show the place for tourism in the Siem Reap Pup Street. That place is the famus place ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/CWHap-Eye8I/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/CWHap-Eye8I/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/CWHap-Eye8I/hqdefault.jpg\",\n            \"channel_name\": \"Happy cooking\",\n            \"published_at\": \"2022-07-24T10:24:01Z\"\n        },\n        {\n            \"id\": \"iISmClPUhpw\",\n            \"created_at\": \"2022-07-24T10:42:24.990265Z\",\n            \"updated_at\": \"2022-07-24T10:42:24.990265Z\",\n            \"title\": \"Sita Cooking | Angkor Wat Bar | how to make cocktail drinks at home SR Temple Club\",\n            \"description\": \"Welcome to Sita Cooking! This channel will show the place for tourism in the Siem Reap Pup Street. That place is the famus place ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/iISmClPUhpw/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/iISmClPUhpw/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/iISmClPUhpw/hqdefault.jpg\",\n            \"channel_name\": \"Happy cooking\",\n            \"published_at\": \"2022-07-24T10:23:53Z\"\n        },\n        {\n            \"id\": \"4k6Dd0939wc\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Sita Cooking | Angkor Wat Bar | how to make cocktail drinks at home SR Temple Club\",\n            \"description\": \"Welcome to Sita Cooking! This channel will show the place for tourism in the Siem Reap Pup Street. That place is the famus place ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/4k6Dd0939wc/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/4k6Dd0939wc/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/4k6Dd0939wc/hqdefault.jpg\",\n            \"channel_name\": \"Happy cooking\",\n            \"published_at\": \"2022-07-24T10:23:27Z\"\n        },\n        {\n            \"id\": \"Bal6QPEavJg\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"#youtubeshorts #shorts #viralvideo #aloogosht #shortvideo #shortrecipe #cooking #short\",\n            \"description\": \"\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/Bal6QPEavJg/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/Bal6QPEavJg/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/Bal6QPEavJg/hqdefault.jpg\",\n            \"channel_name\": \"CHENNAI COOKING CORNER\",\n            \"published_at\": \"2022-07-24T10:23:24Z\"\n        },\n        {\n            \"id\": \"dG7Kqr8Kzy0\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Sita Cooking | Angkor Wat Bar | how to make cocktail drinks at home SR Temple Club\",\n            \"description\": \"Welcome to Sita Cooking! This channel will show the place for tourism in the Siem Reap Pup Street. That place is the famus place ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/dG7Kqr8Kzy0/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/dG7Kqr8Kzy0/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/dG7Kqr8Kzy0/hqdefault.jpg\",\n            \"channel_name\": \"Happy cooking\",\n            \"published_at\": \"2022-07-24T10:23:13Z\"\n        },\n        {\n            \"id\": \"dWxcnEgxyZ8\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"please subscribe my youtube channel 🙏🙏🙏#shorts #youtubeshorts #ytshorts #cooking #foodlovers\",\n            \"description\": \"\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/dWxcnEgxyZ8/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/dWxcnEgxyZ8/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/dWxcnEgxyZ8/hqdefault.jpg\",\n            \"channel_name\": \"Cooking atoz recipes\",\n            \"published_at\": \"2022-07-24T10:20:52Z\"\n        },\n        {\n            \"id\": \"pTVFasAvYyw\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Sita Cooking | Angkor Wat Bar | how to make cocktail drinks at home SR Temple Club\",\n            \"description\": \"Welcome to Sita Cooking! This channel will show the place for tourism in the Siem Reap Pup Street. That place is the famus place ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/pTVFasAvYyw/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/pTVFasAvYyw/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/pTVFasAvYyw/hqdefault.jpg\",\n            \"channel_name\": \"Happy cooking\",\n            \"published_at\": \"2022-07-24T10:17:12Z\"\n        },\n        {\n            \"id\": \"CAZJVT2e1AI\",\n            \"created_at\": \"2022-07-24T10:41:32.010482Z\",\n            \"updated_at\": \"2022-07-24T10:41:32.010482Z\",\n            \"title\": \"Watch my best dishes | | MUKBANG | COOKING #shorts #food #mukbang #cooking\",\n            \"description\": \"Watch my best dishes | | MUKBANG | COOKING #shorts #food #mukbang #cooking.\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/CAZJVT2e1AI/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/CAZJVT2e1AI/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/CAZJVT2e1AI/hqdefault.jpg\",\n            \"channel_name\": \"Bayashi TV Shorts\",\n            \"published_at\": \"2022-07-24T10:15:35Z\"\n        },\n        {\n            \"id\": \"Lv15cCD8fEw\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"zinger chicken #shorts #cooking # recipes @yasmeentaj&#39;s kitchen\",\n            \"description\": \"\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/Lv15cCD8fEw/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/Lv15cCD8fEw/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/Lv15cCD8fEw/hqdefault.jpg\",\n            \"channel_name\": \"yasmeentaj's kitchens......🥰\",\n            \"published_at\": \"2022-07-24T10:14:43Z\"\n        },\n        {\n            \"id\": \"e2Mlc7anomo\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"#cooking #recipes #top | Best of Cooking | Cooking Girl\",\n            \"description\": \"Best of the cooking store in the world https://kit.co/crazytec/cooking-store.\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/e2Mlc7anomo/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/e2Mlc7anomo/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/e2Mlc7anomo/hqdefault.jpg\",\n            \"channel_name\": \"Crazy Best of Cooking.\",\n            \"published_at\": \"2022-07-24T10:13:00Z\"\n        },\n        {\n            \"id\": \"h_PvTOEZEpw\",\n            \"created_at\": \"2022-07-24T10:41:42.593371Z\",\n            \"updated_at\": \"2022-07-24T10:41:42.593371Z\",\n            \"title\": \"miniature cooking food, mini cooking, tiny kitchen set zinger #viral #shorts\",\n            \"description\": \"miniaturekitchenset​ #kitchenset #minikitchenset​ #cookwareset​ #polymerclaykitchenset​ #kitchenwareset​ #kitchentools​ ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/h_PvTOEZEpw/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/h_PvTOEZEpw/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/h_PvTOEZEpw/hqdefault.jpg\",\n            \"channel_name\": \"Arsal Official\",\n            \"published_at\": \"2022-07-24T10:12:12Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET latest video of query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/videos/search?page=1&pageSize=6&query=day",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"videos",
+						"search"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "6"
+						},
+						{
+							"key": "query",
+							"value": "day"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET latest video related to day",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/videos/search?page=1&pageSize=6&query=day",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"videos",
+								"search"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								},
+								{
+									"key": "query",
+									"value": "day"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jul 2022 11:12:35 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1147"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"videos\": [\n        {\n            \"id\": \"RXgA-upgJtk\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Sunday Cooking @falafal #shorts #food\",\n            \"description\": \"if you like my healthy version of the recipe do subscribe. if you want me to turn some good junk into a healthy and tasty, ...\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/RXgA-upgJtk/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/RXgA-upgJtk/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/RXgA-upgJtk/hqdefault.jpg\",\n            \"channel_name\": \"Lifestyle Hunt\",\n            \"published_at\": \"2022-07-24T10:08:00Z\"\n        },\n        {\n            \"id\": \"eEJWTFAGgJ8\",\n            \"created_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"updated_at\": \"2022-07-24T10:41:20.887913Z\",\n            \"title\": \"Beef cooking  🤨📸 #shorts\",\n            \"description\": \"I will post longer videos in YouTube, so subscribe me!! NEW VIDEO, ALMOST EVERYDAY!! SUBSCRIBE ME!!\",\n            \"default_thumbnail_url\": \"https://i.ytimg.com/vi/eEJWTFAGgJ8/default.jpg\",\n            \"medium_thumbnail_url\": \"https://i.ytimg.com/vi/eEJWTFAGgJ8/mqdefault.jpg\",\n            \"high_thumbnail_url\": \"https://i.ytimg.com/vi/eEJWTFAGgJ8/hqdefault.jpg\",\n            \"channel_name\": \"The life4\",\n            \"published_at\": \"2022-07-24T10:01:56Z\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
